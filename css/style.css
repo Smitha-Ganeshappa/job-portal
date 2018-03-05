@@ -1,0 +1,172 @@
+/*------Global color declaration ------*/
+body {
+  font-family: 'Slabo 27px', serif;
+  padding-bottom: 5em; }
+
+.border {
+  height: 6px;
+  border: 0px;
+  background-color: #fd7474;
+  background-image: linear-gradient(to right, #fd7474, #fd7474 25%, #fec951 25%, #fec951 50%, #47b8e0 50%, #47b8e0 75%, #9f68d0 75%, #9f68d0 100%, #9f68d0 100%);
+  -webkit-background-size: 50% 100%;
+  -moz-background-size: 50% 100%;
+  background-size: 50% 100%; }
+
+.wrapper {
+  width: 750px;
+  max-width: 90%;
+  margin: 0 auto; }
+
+.clearfix:before, .clearfix:after {
+  content: " ";
+  display: table; }
+
+.clearfix:after {
+  clear: both; }
+
+.main_header {
+  margin: 5em 0 3em 0; }
+
+.logo img {
+  float: left;
+  width: 75px;
+  max-width: 90%; }
+.logo h1 {
+  font-size: 1.35em;
+  float: left;
+  margin: 0 0 0 1em;
+  text-transform: uppercase;
+  padding-top: 1.1em;
+  color: #34314c; }
+  .logo h1 span {
+    font-weight: 400; }
+
+.nav {
+  float: right;
+  padding-top: 1.75em; }
+  .nav a {
+    text-decoration: none;
+    color: #9592ad;
+    margin-left: 1em; }
+  .nav .current {
+    font-weight: 700;
+    color: #34314c; }
+
+#timeline {
+  width: 100%;
+  position: relative;
+  list-style: none;
+  padding: 0; }
+  #timeline:after {
+    content: " ";
+    width: 1px;
+    background: 1px #d9dee9;
+    height: 90%;
+    position: absolute;
+    top: 3em;
+    left: 3em;
+    z-index: 0; }
+  #timeline a {
+    text-decoration: none; }
+  #timeline .listing {
+    background: #ffffff;
+    border: 1px solid #d9dee9;
+    border-radius: .3em;
+    padding: 1em;
+    margin-bottom: 1em;
+    position: relative;
+    z-index: 1;
+    display: table;
+    width: 100%;
+    transition: all .3s ease-in-out; }
+    #timeline .listing img, #timeline .listing .info, #timeline .listing .job_type {
+      display: table-cell;
+      vertical-align: middle;
+      font-size: .9em;
+      color: #9592ad; }
+    #timeline .listing .image_wrapper {
+      width: 60px; }
+      #timeline .listing .image_wrapper img {
+        width: 60px;
+        display: block;
+        margin: 0 auto;
+        border-radius: .25em; }
+    #timeline .listing .info {
+      width: 640px;
+      line-height: 1.25;
+      padding-left: 25px; }
+      #timeline .listing .info .job_title {
+        font-weight: 700;
+        font-size: 1.5em;
+        color: #34314c; }
+      #timeline .listing .info .job_info {
+        color: #9592ad;
+        display: block; }
+        #timeline .listing .info .job_info span {
+          margin: 0 .75em; }
+    #timeline .listing .job_type {
+      text-transform: uppercase;
+      font-weight: 700;
+      font-size: .75em;
+      position: relative;
+      white-space: nowrap;
+      padding-top: .6em;
+      width: 100x; }
+      #timeline .listing .job_type:before {
+        content: " ";
+        width: 10px;
+        height: 10px;
+        border-radius: 100%;
+        position: absolute;
+        background: #fd7474;
+        left: -20px;
+        top: 27px; }
+    #timeline .listing .full_time {
+      color: #fd7474; }
+      #timeline .listing .full_time:before {
+        background-color: #fd7474; }
+    #timeline .listing .part_time {
+      color: #fec951; }
+      #timeline .listing .part_time:before {
+        background-color: #fec951; }
+    #timeline .listing .freelance {
+      color: #47b8e0; }
+      #timeline .listing .freelance:before {
+        background-color: #47b8e0; }
+    #timeline .listing .contract {
+      color: #9f68d0; }
+      #timeline .listing .contract:before {
+        background-color: #9f68d0; }
+    #timeline .listing:hover {
+      cursor: pointer;
+      box-shadow: 0px 2px 40px 0 rgba(0, 0, 0, 0.1); }
+  #timeline .date {
+    display: inline-block;
+    padding: 1em 0;
+    width: 100px;
+    background: #ffffff;
+    border: 1px solid #d9dee9;
+    border-radius: 3em;
+    font-weight: 700;
+    font-size: .75em;
+    text-align: center;
+    z-index: 2;
+    position: relative;
+    margin: 1em 0 2em 0; }
+
+.load_more {
+  text-align: center; }
+  .load_more .button {
+    border: 2px solid #9f68d0;
+    outline: none;
+    padding: 1em 3.5em;
+    text-align: center;
+    background: transparent;
+    border-radius: 3em;
+    color: #9f68d0;
+    transition: all .3s ease-in-out; }
+    .load_more .button:hover {
+      border: 2px solid #34314c;
+      color: #34314c; }
+
+/*# sourceMappingURL=style.css.map */
